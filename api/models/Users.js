@@ -8,10 +8,23 @@
 module.exports = {
 
   attributes: {
-	  email: 'string',
+	  userId: {
+		  type: 'integer',
+		  autoIncrement: true
+	  },
+	  email: {
+		  type: 'string',
+		  index: true,
+		  primaryKey: true
+	  },
 	  password: 'string',
+	  mobile: 'string',
 	  username: 'string',
-	  type: 'string',
+	  userType: {
+		  type: 'string',
+		  enum: ['ngo', 'contributor', 'admin']
+	  },
+	  active: 'boolean'
   }
 };
 
