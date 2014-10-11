@@ -14,7 +14,7 @@ $(document).ready(function() {
 					'/signup',
 					{firstName: firstName, lastName: lastName, orgName: orgName, emailId: emailId, password:password, mobileNo:mobileNo},
 					function () {
-						window.location = "/signupConfirm";
+						window.location = "/signupconfirm";
 					}
 				).fail(function(res){
 					alert("Error: " + res.getResponseHeader("error"));
@@ -26,4 +26,4 @@ $(document).ready(function() {
 			alert("A username and password is required");
 		}
 	});
-}
+});
