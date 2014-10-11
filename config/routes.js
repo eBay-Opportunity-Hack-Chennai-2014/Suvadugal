@@ -51,10 +51,14 @@ module.exports.routes = {
   },
 
 
-  '/login': {
+  'get /login': {
+		view: 'account/login'
+  },
+
+	'post /login': {
 		controller: 'account',
 		action: 'login'
-  },
+	},
 
   '/dashboard': {
     controller: 'dashboard',
