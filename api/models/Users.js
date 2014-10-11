@@ -8,7 +8,10 @@
 module.exports = {
 
   attributes: {
-
+	  userId: 'int',
+	  username: 'string',
+	  type: 'string',
+	  email: 'string'
   }
 };
 
