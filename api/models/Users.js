@@ -18,13 +18,10 @@ module.exports = {
 		  primaryKey: true
 	  },
 	  password: 'string',
-	  mobile: 'string',
-	  username: 'string',
-	  userType: {
-		  type: 'string',
-		  enum: ['ngo', 'contributor', 'admin']
-	  },
-	  active: 'boolean'
+	  active: 'boolean',
+	  profile: {
+		  model: 'profiles'
+	  }
   }
 };
 
