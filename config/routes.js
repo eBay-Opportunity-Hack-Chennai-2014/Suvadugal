@@ -42,6 +42,11 @@ module.exports.routes = {
 		action: 'index'
   },
 
+  '/dashboard': {
+    controller: 'dashboard',
+    action: 'dashboard'
+  }
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
