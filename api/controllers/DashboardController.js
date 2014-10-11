@@ -1,7 +1,15 @@
 module.exports = {
   dashboard: function(req, res) {
-    // TODO show view based on user type
-    res.view('dashboard/ngo-dashboard');
+    try{
+      if( req.session.user[0].type == 'ngo' ) {
+        res.view('dashboard/ngo-dashboard');
+      } else {
+        res.view('dashboard/contrib-dashboard');
+      }
+    } catch( e ) {
+      console.log( e );
+      res.redirect('/');
+    }
   },
 
 
