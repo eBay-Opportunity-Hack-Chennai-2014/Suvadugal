@@ -50,6 +50,15 @@ module.exports.routes = {
   '/dashboard': {
     controller: 'dashboard',
     action: 'dashboard'
+  },
+
+  '/test-upload': {
+    view: 'test-file-upload'
+  },
+
+  'get /public/images/*': {
+    controller: 'FileController',
+    action: 'get'
   }
 
   /***************************************************************************
