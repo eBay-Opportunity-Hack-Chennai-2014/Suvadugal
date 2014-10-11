@@ -7,21 +7,20 @@
 
 module.exports = {
 
-  attributes: {
-	  userId: {
-		  type: 'integer',
-		  autoIncrement: true,
-		  primaryKey: true
-	  },
-	  email: {
-		  type: 'string',
-		  index: true,
-	  },
-	  password: 'string',
-	  active: 'boolean',
-	  profile: {
-		  model: 'profile'
-	  }
-  }
+	attributes: {
+		userId: {
+			type: 'integer',
+			autoIncrement: true,
+			primaryKey: true
+		},
+		email: {
+			type: 'string',
+			index: true,
+		},
+		password: 'string',
+		active: 'boolean',
+		profile: {
+			model: 'profile'
+		}
+	}
 };
-

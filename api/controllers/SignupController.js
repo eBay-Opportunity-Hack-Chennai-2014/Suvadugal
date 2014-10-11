@@ -12,6 +12,9 @@ module.exports = {
 	},
 
 	signup: function(req, res) {
+		var firstName = req.param('firstName');
+		var lastName = req.param('lastName');
+		var orgName = req.param('orgName');
 		var email = req.param('emailId');
 		var password = req.param('password');
 		var mobile = req.param('mobileNo');
@@ -20,42 +23,42 @@ module.exports = {
 			if(err) {
 				res.send(500, {error: 'DB error'});
 			}
-			else if(usr) {
+			else if(! _.isEmpty(usr)) {
 				res.send(400, {error: 'Email id already registered'});
 			}
 			else {
 				var hasher = require('password-hash');
 				password = hasher.generate(password);
 
-				User.create(
-					{
+				User.create({
 						email: email,
 						password: password, 
 						active: false,
+						profile: null,
+				}).exec(function(err, usr) {
+					if(err) {
+						res.send(500, {error: "DB error"}); 
 					}
-				).exec(function(err, usr) {
-
-					Profile.create(
-					{
-						firstName: firstName,
-						lastName: lastName,
-
-
-
+					else {
+						Profile.create({
+							firstName: firstName,
+							lastName: lastName,
+							orgName: orgName,
+							mobile: mobile,
+							user: usr.userId
+						}).exec(function(err, prof) {
+							if(err) {
+								res.send(500, {error: "DB error"}); 
+							}
+							else {
+								User.update({userId: prof.user}, {profile:prof.id}).exec(function(err, p) {
+									res.redirect('/signupconfirm');
+								});
+							}
+						});
 					}
-				).exec(function(err, profile) {
-					
-					});
-
 				});
-
 			}
-
 		});
-
-
 	}
-
-	
 };
-

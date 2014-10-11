@@ -39,7 +39,7 @@ module.exports.routes = {
 
   '/signup': {
 		controller: 'signup',
-		action: 'index'
+		action: 'signup'
   },
 
   '/login': {
