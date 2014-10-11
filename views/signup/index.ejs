@@ -53,28 +53,25 @@
 
 <div class="col-md-6">
 <div class="panel panel-default">
- <div class="panel-heading">
-     <h3>Register Here</h3>
+ <div id="RegNGO" class="panel-heading">
+     <h3>NGO Registration</h3>
  </div>
  <div class="panel-body">
  <form:form commandName="user" action="success" id="form2" method="post" role="form">
   <div class="form-group">
   <div class="row">
-  <div class="col-md-6 has-error">
-    <label for="First_Name">First Name</label>
-     <form:input path= "firstName" type="text" class="form-control" id="First_Name" placeholder="First Name"/>
+  <div class="col-md-8 has-error">
+    <label for="UserName">User Name</label>
+     <input path= "username" type="text" class="form-control" id="UserName" placeholder="User Name"/>
      </div>
-     <div class="col-sm-6">
-     <label for="Last_Name">Last Name</label>
-     <form:input path= "lastName" type="text" class="form-control" id="Last_Name" placeholder="Last Name"/>
-     </div>
+     
      </div>
   </div>
   <div class="form-group">
   <div class="row">
-  <div class="col-sm-10">
-    <label for="Corp_Id">Corp ID</label>
-     <form:input path= "corpId" type="email" class="form-control" id="Corp_Id" placeholder="Enter PayPal Mail ID"/>
+  <div class="col-sm-8">
+    <label for="email_Id">Email ID</label>
+     <input path= "emailId" type="email" class="form-control" id="email_Id" placeholder="Enter Email ID"/>
      </div>
      </div>
   </div>
@@ -82,7 +79,7 @@
   <div class="row">
   <div class="col-sm-10">
     <label for="Password">Choose Password</label>
-     <form:input path= "password" type="password" class="form-control" id="Password" placeholder="Password"/>
+     <input path= "password" type="password" class="form-control" id="Password" placeholder="Password"/>
      </div>
      </div>
   </div>
@@ -90,7 +87,16 @@
   <div class="row">
    <div class="col-sm-10">
     <label for="C_Password">Confirm Password</label>
-     <form:input path= "cPassword" type="password" class="form-control" id="C_Password" placeholder="Confirm Password"/>
+     <input path= "cPassword" type="password" class="form-control" id="C_Password" placeholder="Confirm Password"/>
+     </div>
+     </div>
+  </div>
+
+  <div class="form-group">
+  <div class="row">
+   <div class="col-sm-10">
+    <label for="MobileNo">Mobile Number</label>
+     <input path= "MobileNo" type="number" class="form-control" id="MobileNo" placeholder="Enter Mobile Number"/>
      </div>
      </div>
   </div>
