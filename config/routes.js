@@ -42,6 +42,11 @@ module.exports.routes = {
 		action: 'index'
   },
 
+  '/login': {
+		controller: 'account',
+		action: 'login'
+  },
+
   '/dashboard': {
     controller: 'dashboard',
     action: 'dashboard'
