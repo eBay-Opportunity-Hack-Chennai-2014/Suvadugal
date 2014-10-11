@@ -37,7 +37,11 @@ module.exports.routes = {
 		action: 'index'
   },
 
-  '/signup': {
+  'get /signup': {
+		view: 'signup/index'
+  },
+
+  'post /signup': {
 		controller: 'signup',
 		action: 'signup'
   },
