@@ -35,7 +35,12 @@ module.exports.routes = {
   '/': {
 		controller: 'home',
 		action: 'index'
-  }
+  },
+
+  '/signup': {
+		controller: 'signup',
+		action: 'index'
+  },
 
   /***************************************************************************
   *                                                                          *
