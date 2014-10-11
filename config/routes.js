@@ -42,6 +42,11 @@ module.exports.routes = {
 		action: 'signup'
   },
 
+  'get /signupconfirm': {
+		view: 'signupconfirm'
+  },
+
+
   '/login': {
 		controller: 'account',
 		action: 'login'
