@@ -11,7 +11,7 @@ module.exports = {
 	  firstName: 'string',
 	  lastName: 'string',
 	  orgName: 'string',
-	  orgId: 'string',
+//	  orgId: 'string',
 	  userType: {
 		  type: 'string',
 		  enum: ['ngo', 'contributor', 'admin']

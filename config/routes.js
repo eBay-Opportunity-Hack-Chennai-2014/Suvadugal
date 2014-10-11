@@ -37,10 +37,19 @@ module.exports.routes = {
 		action: 'index'
   },
 
-  '/signup': {
-		controller: 'signup',
-		action: 'index'
+  'get /signup': {
+		view: 'signup/index'
   },
+
+  'post /signup': {
+		controller: 'signup',
+		action: 'signup'
+  },
+
+  'get /signupconfirm': {
+		view: 'signupconfirm'
+  },
+
 
   '/login': {
 		controller: 'account',
@@ -50,6 +59,15 @@ module.exports.routes = {
   '/dashboard': {
     controller: 'dashboard',
     action: 'dashboard'
+  },
+
+  '/test-upload': {
+    view: 'test-file-upload'
+  },
+
+  'get /public/images/*': {
+    controller: 'FileController',
+    action: 'get'
   }
 
   /***************************************************************************
