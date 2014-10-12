@@ -43,6 +43,14 @@ var jsFilesToInject = [
   'js/owl.carousel.js',
   'js/signup.js',
   'js/home.js',
+  'js/raphael.min.js',
+  'js/morris.min.js',
+  'js/morris-data.js',
+  'js/jquery.flot.js',
+  'js/jquery.flot.tooltip.min.js',
+  'js/jquery.flot.resize.js',
+  'js/jquery.flot.pie.js',
+  'js/flot-data.js'
 ];
 
 
