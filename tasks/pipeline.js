@@ -49,7 +49,7 @@ var jsFilesToInject = [
   'js/jquery.flot.tooltip.min.js',
   'js/jquery.flot.resize.js',
   'js/jquery.flot.pie.js',
-  'js/flot-data.js'
+  'js/flot-data.js',
 ];
 
 
