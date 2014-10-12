@@ -79,6 +79,11 @@ module.exports.routes = {
   'get /public/images/*': {
     controller: 'FileController',
     action: 'get'
+  },
+
+  'get /campaing/index': {
+    controller: 'CampaignController',
+    action: 'index'
   }
 
   /***************************************************************************
