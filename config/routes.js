@@ -52,7 +52,8 @@ module.exports.routes = {
 
 
   'get /login': {
-		view: 'account/login'
+	  controller: 'account',
+		action: 'loginpage'
   },
 
 	'post /login': {

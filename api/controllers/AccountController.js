@@ -6,10 +6,14 @@
  */
 
 module.exports = {
+	loginpage:function(req, res) {
+		res.view();
+	},
+
 	login: function(req, res) {
 		var email = req.param("email");
 		var password = req.param("password");
-		User.findByEmail(email).exec(function(err, usr) {
+		User.findByEmail(email).populate('profile').exec(function(err, usr) {
 			if(err) {
 				res.send(500, {error: 'DB error'});
 			}
@@ -18,7 +22,8 @@ module.exports = {
 					var hasher = require('password-hash');
 
 					if (hasher.verify(password, usr[0].password)) {
-						req.session.user = usr;
+						req.session.user = usr[0];
+						req.session.authenticated = true;
 						res.redirect('/dashboard');
 					} else {
 						res.send(400, { error: "Wrong Password" });
