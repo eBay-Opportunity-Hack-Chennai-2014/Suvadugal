@@ -40,5 +40,18 @@ module.exports = {
     res.view('dashboard/volunteers');
   },
 
+  sendSms: function(req, res) {
+    var accountSid = '';
+    var authToken = "";
+    var client = require('twilio')(accountSid, authToken);
+
+    client.messages.create({
+            body: req.param('eventName'),
+            to: "+919884533166",
+            from: "+12602225231"
+        }, function(err, message) {
+            res.json( message );
+        });
+  }
 
 };
