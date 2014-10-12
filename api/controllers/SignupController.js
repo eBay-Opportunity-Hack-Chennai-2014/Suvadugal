@@ -18,7 +18,7 @@ module.exports = {
 		var email = req.param('emailId');
 		var password = req.param('password');
 		var mobile = req.param('mobileNo');
-		var type = 'ngo';
+		var type = req.param('type');
 
 		User.findByEmail(email).exec(function(err, usr) {
 			if(err) {
