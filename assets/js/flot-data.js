@@ -4,16 +4,16 @@
 $(function() {
 
     var data = [{
-        label: "Series 0",
+        label: "Blood Donation",
         data: 1
     }, {
-        label: "Series 1",
+        label: "Education",
         data: 3
     }, {
-        label: "Series 2",
+        label: "Disabled",
         data: 9
     }, {
-        label: "Series 3",
+        label: "Others",
         data: 20
     }];
 
