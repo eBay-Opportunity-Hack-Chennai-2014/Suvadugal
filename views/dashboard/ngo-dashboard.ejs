@@ -1,206 +1,50 @@
-<div id="wrapper">
-
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="/dashboard">Suvadugal</a>
-              </div>
-              <!-- Top Menu Items -->
-              <ul class="nav navbar-right top-nav">
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                      <ul class="dropdown-menu message-dropdown">
-                          <li class="message-preview">
-                              <a href="#">
-                                  <div class="media">
-                                      <span class="pull-left">
-                                          <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                      </span>
-                                      <div class="media-body">
-                                          <h5 class="media-heading"><strong><%= username %></strong>
-                                          </h5>
-                                          <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          <li class="message-preview">
-                              <a href="#">
-                                  <div class="media">
-                                      <span class="pull-left">
-                                          <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                      </span>
-                                      <div class="media-body">
-                                          <h5 class="media-heading"><strong><%= username %></strong>
-                                          </h5>
-                                          <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          <li class="message-preview">
-                              <a href="#">
-                                  <div class="media">
-                                      <span class="pull-left">
-                                          <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                      </span>
-                                      <div class="media-body">
-                                          <h5 class="media-heading"><strong><%= username %></strong>
-                                          </h5>
-                                          <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          <li class="message-footer">
-                              <a href="#">Read All New Messages</a>
-                          </li>
-                      </ul>
-                  </li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                      <ul class="dropdown-menu alert-dropdown">
-                          <li>
-                              <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                          </li>
-                          <li>
-                              <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                          </li>
-                          <li>
-                              <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                          </li>
-                          <li>
-                              <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                          </li>
-                          <li>
-                              <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                          </li>
-                          <li>
-                              <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                          </li>
-                          <li class="divider"></li>
-                          <li>
-                              <a href="#">View All</a>
-                          </li>
-                      </ul>
-                  </li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><%= username %><b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                          </li>
-                          <li>
-                              <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                          </li>
-                          <li>
-                              <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                          </li>
-                          <li class="divider"></li>
-                          <li>
-                              <a href="/logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-              <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-              <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav side-nav">
-                      <li class="active">
-                          <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                      </li>
-                      <li>
-                          <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Organization Profile</a>
-                      </li>
-                      <li>
-                          <a href="tables.html"><i class="fa fa-fw fa-table"></i> Recent Followers</a>
-                      </li>
-                      <li>
-                          <a href="events"><i class="fa fa-fw fa-edit"></i> Events</a>
-                      </li>
-                      <li>
-                          <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Volunteers List</a>
-                      </li>
-                      <li>
-                          <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                          <ul id="demo" class="collapse">
-                              <li>
-                                  <a href="#">Dropdown Item</a>
-                              </li>
-                              <li>
-                                  <a href="#">Dropdown Item</a>
-                              </li>
-                          </ul>
-                      </li>
-                      <li>
-                          <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- /.navbar-collapse -->
-          </nav>
-    <div id="page-wrapper">
-        <div class="container-fluid">
+<div class="row">
+ <div class="col-lg-12">
         <div class="row">
-         <div class="col-lg-12">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-12">
+          <div class="col-xs-12 col-sm-12">
 
-                    <!-- Start About Me -->
-                    <h2>About Social NGO</h2>
-                    <p>Suvadugal" was established in May 2011, originated from Chennai and looking to extend its services geographically. Started with a small group of members it aimed at doing viable good to the society. Later on expanding its member strength it started spreading its services across the current thematic areas. It is also registered as a 'Trust' under Government norms and regulations to serve the society on general terms. All activities carried out by us are bound to these norms and regulations.
+            <!-- Start About Me -->
+            <h2>About Social NGO</h2>
+            <p>Suvadugal" was established in May 2011, originated from Chennai and looking to extend its services geographically. Started with a small group of members it aimed at doing viable good to the society. Later on expanding its member strength it started spreading its services across the current thematic areas. It is also registered as a 'Trust' under Government norms and regulations to serve the society on general terms. All activities carried out by us are bound to these norms and regulations.
 
-      “Suvadugal” is managed by an executive committee supported by a team of young dedicated professionals. Most of its members are software professionals working in and around Chennai which helps to serve in the city and urges to reach rural areas across regions.
+“Suvadugal” is managed by an executive committee supported by a team of young dedicated professionals. Most of its members are software professionals working in and around Chennai which helps to serve in the city and urges to reach rural areas across regions.
 
-      At initial stages we looked to gather knowledge on service from existing service organizations, as we believed in the saying, ‘Only if you are put into water, you will learn swimming’. By that way we also targeted at understanding the needs, problems faced and the daily life of the needy’s. We also got many contacts from fellow service organizations, which helped us to gain knowledge, reach those who needed help, made us reachable to those who needed help and a lot more.</p>
-                    <!-- End About Me -->
+At initial stages we looked to gather knowledge on service from existing service organizations, as we believed in the saying, ‘Only if you are put into water, you will learn swimming’. By that way we also targeted at understanding the needs, problems faced and the daily life of the needy’s. We also got many contacts from fellow service organizations, which helped us to gain knowledge, reach those who needed help, made us reachable to those who needed help and a lot more.</p>
+            <!-- End About Me -->
 
 
 
-                    <!-- Start Latest Projects -->
-                    <h2>Recent Activities and Initiatives</h2>
+            <!-- Start Latest Projects -->
+            <h2>Recent Activities and Initiatives</h2>
 
-                    <div class="row projects">
-                      <div class="col-xs-12 col-sm-6">
-                        <p><a href="#"><i class="icon-plus"></i>Activity1</a></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
-                      </div>
-
-                      <div class="clearfix visible-xs"></div>
-
-                      <div class="col-xs-12 col-sm-6">
-                        <p><a href="#"><i class="icon-plus"></i>Activity2</a></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
-                      </div>
-                    </div>
-
-                    <div class="row projects">
-                      <div class="col-xs-12 col-sm-6">
-                        <p><a href="#"><i class="icon-plus"></i>Activity3</a></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
-                      </div>
-
-                      <div class="clearfix visible-xs"></div>
-
-                      <div class="col-xs-12 col-sm-6">
-                        <p><a href="#"><i class="icon-plus"></i>Activity4</a></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="row projects">
+              <div class="col-xs-12 col-sm-6">
+                <p><a href="#"><i class="icon-plus"></i>Activity1</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
               </div>
-        </div>
-       </div>
 
-    </div>
+              <div class="clearfix visible-xs"></div>
+
+              <div class="col-xs-12 col-sm-6">
+                <p><a href="#"><i class="icon-plus"></i>Activity2</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
+              </div>
+            </div>
+
+            <div class="row projects">
+              <div class="col-xs-12 col-sm-6">
+                <p><a href="#"><i class="icon-plus"></i>Activity3</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
+              </div>
+
+              <div class="clearfix visible-xs"></div>
+
+              <div class="col-xs-12 col-sm-6">
+                <p><a href="#"><i class="icon-plus"></i>Activity4</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lobortis felis, eget porta augue consequat et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
