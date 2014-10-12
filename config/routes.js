@@ -38,7 +38,8 @@ module.exports.routes = {
   },
 
   'get /signup': {
-		view: 'signup/index'
+		controller: 'signup',
+		action: 'signuppage'
   },
 
   'post /signup': {
@@ -52,7 +53,13 @@ module.exports.routes = {
 
 
   'get /login': {
-		view: 'account/login'
+	  controller: 'account',
+		action: 'loginpage'
+  },
+
+  'get /logout': {
+	  controller: 'account',
+		action: 'logout'
   },
 
 	'post /login': {

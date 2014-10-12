@@ -11,6 +11,10 @@ module.exports = {
 		res.view();
 	},
 
+	signuppage: function(req, res) {
+		res.view();
+	},
+
 	signup: function(req, res) {
 		var firstName = req.param('firstName');
 		var lastName = req.param('lastName');
@@ -18,6 +22,7 @@ module.exports = {
 		var email = req.param('emailId');
 		var password = req.param('password');
 		var mobile = req.param('mobileNo');
+		var type = req.param('type');
 
 		User.findByEmail(email).exec(function(err, usr) {
 			if(err) {
@@ -32,12 +37,13 @@ module.exports = {
 
 				User.create({
 						email: email,
-						password: password, 
+						password: password,
 						active: false,
 						profile: null,
+						type: type
 				}).exec(function(err, usr) {
 					if(err) {
-						res.send(500, {error: "DB error"}); 
+						res.send(500, {error: "DB error"});
 					}
 					else {
 						Profile.create({
@@ -48,7 +54,7 @@ module.exports = {
 							user: usr.userId
 						}).exec(function(err, prof) {
 							if(err) {
-								res.send(500, {error: "DB error"}); 
+								res.send(500, {error: "DB error"});
 							}
 							else {
 								User.update({userId: prof.user}, {profile:prof.id}).exec(function(err, p) {

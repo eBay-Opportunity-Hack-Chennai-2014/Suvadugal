@@ -34,6 +34,14 @@ module.exports.policies = {
   * and its actions                                                          *
   *                                                                          *
   ***************************************************************************/
+	AccountController: {
+		loginpage: 'IsLoggedIn',
+
+	},
+
+	SignupController: {
+		signuppage: 'IsLoggedIn',
+	}
 	// RabbitController: {
 
 		// Apply the `false` policy as the default for all of RabbitController's actions
