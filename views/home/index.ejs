@@ -1,67 +1,200 @@
-<style>
-  html,body {
-  font-family: 'Nunito', sans-serif;
-  height:100%;
-}
-
-h1 {
-  font-family: Arial,sans-serif
-  color:#000;
-  font-weight: bold;
-}
-
-.lead {
-	color:#000;
-}
-
-/* Custom container */
-.container-full {
-  margin: 0 auto;
-  width: 100%;
-  min-height:100%;
-  color:#000;
-  overflow:hidden;
-}
-
-.container-full a {
-  color:#efefef;
-  text-decoration:none;
-}
-
-.v-center {
-  margin-top:7%;
-}
-</style>
-<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-<div class="container-full" style="background-image: url('/images/6.jpg');background-repeat:no-repeat;background-size:80% 100%;background-position:center;">
-
-      <div class="row">
-
-        <div class="col-lg-12 text-center v-center" style="position:absolute;left:350px;top:170px">
-          <h1>Suvadugal</h1>
-
-          <p class="lead">Connecting NGOs with contributors</p>
-
-          <br><br><br>
-
-          <form class="col-lg-12">
-            <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
-              <p class="lead">Register as <a href="signup?registerType=ngo" class="btn btn-success">NGO</a> | <a href="signup?registerType=contrib" class="btn btn-success">Contributor</a></p>
-              <p class="lead"><a type="button" class="btn btn-primary" href="/login">Sign In</a>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Suvadugal!</div>
+                <div class="intro-heading">It's Nice To Meet You</div>
+                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
-          </form>
         </div>
+    </header>
 
-      </div> <!-- /row -->
-
-  	  <div class="row">
-
-        <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-          <a href="#"><i class="icon-google-plus"></i></a> <a href="#"><i class="icon-facebook"></i></a>  <a href="#"><i class="icon-twitter"></i></a> <a href="#"><i class="icon-github"></i></a> <a href="#"><i class="icon-pinterest"></i></a>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What we do</h2>
+                    <h3 class="section-subheading text-muted">We help unite NGO's to serve people better</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">NGO's</h4>
+                    <p class="text-muted">Many NGO's have same mission and goal. We unite them</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Leverage Technology</h4>
+                    <p class="text-muted">Leverage high tech to reach and serve people</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Privacy</h4>
+                    <p class="text-muted">We respect privacy of contributors</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">"Suvadugal" is a non profile non government organization</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="/images/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Suvadugal" was established in May 2011, originated from Chennai and looking to extend its services geographically. Started with a small group of members it aimed at doing viable good to the society. Later on expanding its member strength it started spreading its services across the current thematic areas. It is also registered as a 'Trust' under Government norms and regulations to serve the society on general terms. All activities carried out by us are bound to these norms and regulations</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="/images/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2012</h4>
+                                    <h4 class="subheading">An NGO is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">"Suvadugal" is managed by an executive committee supported by a team of young dedicated professionals. Most of its members are software professionals working in and around Chennai which helps to serve in the city and urges to reach rural areas across regions.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="/images/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2013</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">At initial stages we looked to gather knowledge on service from existing service organizations, as we believed in the saying, ‘Only if you are put into water, you will learn swimming’. By that way we also targeted at understanding the needs, problems faced and the daily life of the needy's</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="/images/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2014</h4>
+                                    <h4 class="subheading">Our expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">As the peak of our achievements we identified school and college students who have everlasting hunger for education and in need of financial, technical help. Since then we have taken full responsibility to help out these students in whatever way possible. Volunteers monitor the progress of these students which is also part of our scheduled activities.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Cause!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  	<br><br><br><br><br>
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">The great team dedicated to make this effort a reality</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4>Manikandan</h4>
+                        <p class="text-muted">Social Worker</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4>Venkat</h4>
+                        <p class="text-muted">Tech Architect</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4>Poomalairaj</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-</div> <!-- /container full -->
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4>Krishna</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
