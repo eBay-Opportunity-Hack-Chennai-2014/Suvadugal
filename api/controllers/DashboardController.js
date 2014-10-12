@@ -6,7 +6,6 @@ module.exports = {
 		}
 		else {
 			try{
-				console.log(req.session.user);
 				if( req.session.user.type == 'ngo' ) {
 					res.view('dashboard/ngo-dashboard', {username: req.session.user.profile.firstName});
 				}
