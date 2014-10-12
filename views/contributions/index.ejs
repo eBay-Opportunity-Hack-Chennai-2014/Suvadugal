@@ -115,20 +115,20 @@
               <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav side-nav">
+                      <li>
+                          <a href="userdashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                      </li>
+                      <li >
+                          <a href="profile"><i class="fa fa-fw fa-bar-chart-o"></i>My Profile</a>
+                      </li>
+                      <li>
+                          <a href="ListOfNGOfollowing"><i class="fa fa-fw fa-table"></i>Following</a>
+                      </li>
+                      <li>
+                          <a href="NGOsearch"><i class="fa fa-fw fa-edit"></i>Find NGO</a>
+                      </li>
                       <li class="active">
-                          <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                      </li>
-                      <li>
-                          <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Organization Profile</a>
-                      </li>
-                      <li>
-                          <a href="tables.html"><i class="fa fa-fw fa-table"></i> Recent Followers</a>
-                      </li>
-                      <li>
-                          <a href="events"><i class="fa fa-fw fa-edit"></i> Events</a>
-                      </li>
-                      <li>
-                          <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Volunteers List</a>
+                          <a href="contributions"><i class="fa fa-fw fa-desktop"></i>Contributions</a>
                       </li>
                       <li>
                           <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -148,10 +148,62 @@
               </div>
               <!-- /.navbar-collapse -->
           </nav>
-    <div id="page-wrapper">
-        <div class="container-fluid">
-          <%- partial( partialFile ) %>
-       </div>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-6 col-sm-offset-1" style="margin-top:30px;color:white">
+      <div class="panel panel-default" style="color:black">
+
+        <div class="panel-heading">
+          <h3>Contributions Made</h3>
+        </div>
+        <div class="panel-body">
+           <table class="table">
+             <thead>
+               <tr>
+                <th>NGO Name</th>
+                <th>Details Of the Contribution Made</th>
+               </tr>
+
+             </thead>
+
+             <tbody>
+               <tr>
+                <td>NGO1</td>
+                <td>Details Of the Contribution Made to the NGO1</td>
+               </tr>
+               <tr>
+                <td>NGO2</td>
+                <td>Details Of the Contribution Made to the NGO2</td>
+               </tr>
+               <tr>
+                <td>NGO3</td>
+                <td>Details Of the Contribution Made to the NGO3</td>
+               </tr>
+               <tr>
+                <td>NGO4</td>
+                <td>Details Of the Contribution Made to the NGO4</td>
+               </tr>
+               <tr>
+                <td>NGO5</td>
+                <td>Details Of the Contribution Made to the NGO5</td>
+               </tr>
+
+             </tbody>
+             
+           </table>
+
+        </div>
+
+      </div>
 
     </div>
+
+
+  </div>
+
+</div>
+    
 </div>

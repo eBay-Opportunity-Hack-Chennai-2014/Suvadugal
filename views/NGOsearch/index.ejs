@@ -115,20 +115,20 @@
               <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav side-nav">
+                      <li>
+                          <a href="userdashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                      </li>
+                      <li >
+                          <a href="profile"><i class="fa fa-fw fa-bar-chart-o"></i>My Profile</a>
+                      </li>
+                      <li>
+                          <a href="ListOfNGOfollowing"><i class="fa fa-fw fa-table"></i>Following</a>
+                      </li>
                       <li class="active">
-                          <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                          <a href="NGOsearch"><i class="fa fa-fw fa-edit"></i>Find NGO</a>
                       </li>
                       <li>
-                          <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Organization Profile</a>
-                      </li>
-                      <li>
-                          <a href="tables.html"><i class="fa fa-fw fa-table"></i> Recent Followers</a>
-                      </li>
-                      <li>
-                          <a href="events"><i class="fa fa-fw fa-edit"></i> Events</a>
-                      </li>
-                      <li>
-                          <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Volunteers List</a>
+                          <a href="contributions"><i class="fa fa-fw fa-desktop"></i>Contributions Made</a>
                       </li>
                       <li>
                           <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -148,10 +148,104 @@
               </div>
               <!-- /.navbar-collapse -->
           </nav>
-    <div id="page-wrapper">
-        <div class="container-fluid">
-          <%- partial( partialFile ) %>
-       </div>
+
+
+  <div class="container">
+
+    <div class="row" style="margin-top:50px">
+      <div class="col-sm-offset-3 col-sm-6">
+
+       <input id="NGO_search" type="text" data-provide="typeahead" placeholder="Search NGO">
+    <button id="NGO_search" type="button" class="btn btn-success ">Search</button>
 
     </div>
+
+    </div>
+
+    <div class="row" style="margin-top:30px;color:white">
+      <table class="table col-sm-6">
+        
+        <tbody>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+          <tr>
+            <td>NGO1</td>
+           <td class="pull-right">
+             <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-hand-up"></span> Follow
+              </button>
+           </td>
+          </tr>
+
+        </tbody>
+ 
+      </table>
+
+    </div>
+
+
+  </div>
+
 </div>

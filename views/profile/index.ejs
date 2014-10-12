@@ -115,20 +115,20 @@
               <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav side-nav">
+                      <li>
+                          <a href="userdashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                      </li>
                       <li class="active">
-                          <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                          <a href="profile"><i class="fa fa-fw fa-bar-chart-o"></i>My Profile</a>
                       </li>
                       <li>
-                          <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Organization Profile</a>
+                          <a href="ListOfNGOfollowing"><i class="fa fa-fw fa-table"></i>Following</a>
                       </li>
                       <li>
-                          <a href="tables.html"><i class="fa fa-fw fa-table"></i> Recent Followers</a>
+                          <a href="NGOsearch"><i class="fa fa-fw fa-edit"></i>Find NGO</a>
                       </li>
                       <li>
-                          <a href="events"><i class="fa fa-fw fa-edit"></i> Events</a>
-                      </li>
-                      <li>
-                          <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Volunteers List</a>
+                          <a href="contributions"><i class="fa fa-fw fa-desktop"></i>Contributions Made</a>
                       </li>
                       <li>
                           <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -148,10 +148,79 @@
               </div>
               <!-- /.navbar-collapse -->
           </nav>
-    <div id="page-wrapper">
-        <div class="container-fluid">
-          <%- partial( partialFile ) %>
-       </div>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-6 col-sm-offset-1" style="margin-top:30px;color:white">
+      <div class="panel panel-default" style="color:black">
+
+        <div class="panel-heading">
+          <h3>User Profile</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <h4>User Name</h4>
+           </div>
+           <div class="col-sm-8">
+              <h4>Kedarnath Reddy</h4>
+           </div>
+
+          </div>
+           <div class="row">
+
+            <div class="col-sm-4">
+              <h4>EmailID</h4>
+           </div>
+           <div class="col-sm-8">
+              <h4>sachin.kedar.reddy@gmail.com</h4>
+           </div>
+
+          </div>
+           <div class="row">
+
+            <div class="col-sm-4">
+              <h4>Age</h4>
+           </div>
+           <div class="col-sm-8">
+              <h4>20</h4>
+           </div>
+
+          </div>
+           <div class="row">
+
+            <div class="col-sm-4">
+              <h4>Address</h4>
+           </div>
+           <div class="col-sm-8">
+              <h4>PayPal,Chennai-119</h4>
+           </div>
+
+          </div>
+           <div class="row">
+
+            <div class="col-sm-4">
+              <h4>Number of NGO's following</h4>
+           </div>
+           <div class="col-sm-8">
+              <h4>3</h4>
+           </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
 
     </div>
+
+
+  </div>
+
+</div>
+    
 </div>

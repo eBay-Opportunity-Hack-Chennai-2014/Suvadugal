@@ -7,7 +7,11 @@ module.exports = {
     else {
       try{
         if( req.session.user.type == 'ngo' ) {
-          res.view('dashboard/ngo-dashboard', {username: req.session.user.profile.firstName});
+          res.view('dashboard/layout',
+          {
+            username: req.session.user.profile.firstName,
+            partialFile: 'ngo-dashboard.ejs'
+          });
         }
         else {
           res.view('dashboard/contrib-dashboard', {username: req.session.user.profile.firstName});
