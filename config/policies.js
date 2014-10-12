@@ -37,6 +37,10 @@ module.exports.policies = {
 	AccountController: {
 		loginpage: 'IsLoggedIn',
 
+	},
+
+	SignupController: {
+		signuppage: 'IsLoggedIn',
 	}
 	// RabbitController: {
 

@@ -10,6 +10,11 @@ module.exports = {
 		res.view();
 	},
 
+	logout: function(req, res) {
+		req.session.user = null;
+		res.redirect('/');
+	},
+
 	login: function(req, res) {
 		var email = req.param("email");
 		var password = req.param("password");

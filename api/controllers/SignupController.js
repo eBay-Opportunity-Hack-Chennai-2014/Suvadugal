@@ -11,6 +11,10 @@ module.exports = {
 		res.view();
 	},
 
+	signuppage: function(req, res) {
+		res.view();
+	},
+
 	signup: function(req, res) {
 		var firstName = req.param('firstName');
 		var lastName = req.param('lastName');
