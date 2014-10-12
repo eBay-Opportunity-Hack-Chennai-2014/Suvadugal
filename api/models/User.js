@@ -17,6 +17,7 @@ module.exports = {
 			type: 'string',
 			index: true,
 		},
+    type: 'string',
 		password: 'string',
 		active: 'boolean',
 		profile: {
