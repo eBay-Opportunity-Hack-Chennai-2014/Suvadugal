@@ -42,7 +42,6 @@ var jsFilesToInject = [
   'js/bootstrap.min.js',
   'js/owl.carousel.js',
   'js/signup.js',
-  'js/home.js',
   'js/raphael.min.js',
   'js/morris.min.js',
   'js/morris-data.js',
