@@ -10,7 +10,7 @@ module.exports = {
           res.view('dashboard/layout',
           {
             username: req.session.user.profile.firstName,
-            body: 'dashboard/ngo-dashboard.ejs'
+            partialFile: 'ngo-dashboard.ejs'
           });
         }
         else {
