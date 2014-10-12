@@ -24,7 +24,11 @@ module.exports = {
   },
 
   events: function(req, res) {
-    res.view('dashboard/events');
+    res.view('dashboard/layout',
+    {
+      username: req.session.user.profile.firstName,
+      partialFile: 'events.ejs'
+    });
   },
 
   followers: function(req, res) {
