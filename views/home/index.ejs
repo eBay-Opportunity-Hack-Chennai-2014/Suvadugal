@@ -1,25 +1,25 @@
 <style>
   html,body {
+  font-family: 'Nunito', sans-serif;
   height:100%;
 }
 
 h1 {
   font-family: Arial,sans-serif
-  font-size:80px;
-  color:#DDCCEE;
+  color:#000;
+  font-weight: bold;
 }
 
 .lead {
-	color:#DDCCEE;
+	color:#000;
 }
-
 
 /* Custom container */
 .container-full {
   margin: 0 auto;
   width: 100%;
   min-height:100%;
-  color:#eee;
+  color:#000;
   overflow:hidden;
 }
 
@@ -31,23 +31,23 @@ h1 {
 .v-center {
   margin-top:7%;
 }
-
 </style>
-<div class="container-full">
+<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+<div class="container-full" style="background-image: url('/images/6.jpg');background-repeat:no-repeat;background-size:80% 100%;background-position:center;">
 
       <div class="row">
 
-        <div class="col-lg-12 text-center v-center">
-
+        <div class="col-lg-12 text-center v-center" style="position:absolute;left:350px;top:170px">
           <h1>Suvadugal</h1>
+
           <p class="lead">Connecting NGOs with contributors</p>
 
           <br><br><br>
 
           <form class="col-lg-12">
             <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
-              <p class="lead">Register - <a href="signup?registerType=ngo">NGO</a> | <a href="signup?registerType=contrib">Contributor</a></p>
-              <p class="lead"><a href="/login">Sign In</a>
+              <p class="lead">Register as <button href="signup?registerType=ngo" class="btn btn-success">NGO</button> | <button href="signup?registerType=contrib" class="btn btn-success">Contributor</button></p>
+              <p class="lead"><button type="button" class="btn btn-large" href="/login">Sign In</button>
             </div>
           </form>
         </div>
