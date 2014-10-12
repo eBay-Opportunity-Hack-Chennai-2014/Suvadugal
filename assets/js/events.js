@@ -71,4 +71,14 @@ $(function() {
     $('#textarea').val("");
     $('#mobileNo').val("");
   })
+
+  /*('#smsBtn').click(function() {
+    var eventName = $('#eventName').val();
+    $.ajax({
+      url: "/dashboard/sendSms?eventName=" + eventName,
+      context: document.body
+    }).done(function(response) {
+      alert("SMS sent successfully");
+    });
+  });*/
 });
